@@ -2,7 +2,9 @@
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
@@ -59,18 +61,19 @@ ul {
     </div>
   </div>
   <script>
-    VANTA.BIRDS({
+    VANTA.HALO({
       el: "html",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      birdSize: 2.90,
-      speedLimit: 2.00,
-      quantity: 3.00
+      baseColor: 0x1ae38c,
+      backgroundColor: 0x60d3a,
+      amplitudeFactor: 1.10,
+      xOffset: 0.23,
+      yOffset: 0.03,
+      size: 1.90
     })
     </script>
 </body>
